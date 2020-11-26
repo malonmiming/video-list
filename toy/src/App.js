@@ -1,9 +1,14 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import { Route } from 'react-router-dom';
+import guideIndex from "./pages";
 
-function App() {
+const App = (props) => {
+
   return (
     <div className="App">
+      <Route path="/about" component={guideIndex} />
+      <Route path="/about" component={guideIndex} />
     </div>
   );
 }
