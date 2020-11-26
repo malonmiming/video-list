@@ -9,6 +9,7 @@ const App = (props) => {
     <div className="App">
       <Route path="/about" component={guideIndex} />
       <Route path="/about" component={guideIndex} />
+      <Route path="/about" component={guideIndex} />
     </div>
   );
 }
