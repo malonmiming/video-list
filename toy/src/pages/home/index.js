@@ -1,7 +1,7 @@
 import React from 'react';
-import '@assets/index.less';
+import "@assets/index.less";
 
-const index = (props) => {
+const homeIndex = (props) => {
   return (
     <div className="app">
       <text className="app_text">홈</text>
@@ -9,4 +9,4 @@ const index = (props) => {
   );
 }
 
-export default index;
+export default homeIndex;
