@@ -11,8 +11,6 @@ const App = (props) => {
   return (
     <div className="App">
       <Route path="/home" component={homeIndex} />
-      <Route path="/search" component={searchIndex} />
-      <Route path="/table" component={tableIndex} />
     </div>
   );
 }
