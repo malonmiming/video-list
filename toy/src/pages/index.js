@@ -1,5 +1,5 @@
 import React from 'react';
-import '@assets/index.less';
+import "../assets/index.less";
 
 const index = (props) => {
   return (

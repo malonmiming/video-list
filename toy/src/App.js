@@ -1,18 +1,8 @@
-import React from "react";
-import './App.css';
-import { Route } from 'react-router-dom';
-import guideIndex from "./pages/home";
-import searchIndex from "./pages/search";
-import homeIndex from "./pages/home";
-import tableIndex from "./pages/table";
+import React from 'react';
+import Say from './Say';
 
-const App = (props) => {
-
-  return (
-    <div className="App">
-      <Route path="/home" component={homeIndex} />
-    </div>
-  );
-}
+const App = () => {
+  return <Say />;
+};
 
 export default App;
