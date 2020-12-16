@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import ContextSample from "./ContextSample";
 
 
 ReactDOM.render(
-    <App />,
+    <ContextSample />,
   document.getElementById('root')
 );
 
