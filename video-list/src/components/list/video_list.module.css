@@ -1,19 +1,6 @@
-.video {
+.videos {
     display: flex;
-    align-items: center;
-    border: 1px solid #aaa;
-    margin-bottom: 0.2em;
-    transition: transform 250ms ease-in;
-}
-.title,
-.channel {
-    margin:0;
-}
-
-.channel {
-    font-size: 1rem;
-}
-
-.video:hover {
-    transform: scale(1.02);
+    flex-wrap: wrap;
+    list-style: none;
+    padding:0;
 }
