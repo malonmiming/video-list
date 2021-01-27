@@ -1,11 +1,23 @@
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import VideoList from "./components/list/video_list";
 
 function App() {
-  return (
-    <div className="App">
+  const [vidoes, setvides] = useState([]);
 
-    </div>
+  useEffect(() => {
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
+
+    fetch("https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=AIzaSyDirEgqenIcV7esmshBlnWwos1FIrcPqvw", requestOptions)
+      .then(response => response.json())
+      .then(result => setvides(result.items))
+      .catch(error => console.log('error', error));
+  }, []);
+  return (
+    <VideoList vidoes={vidoes} />
   );
 }
 
